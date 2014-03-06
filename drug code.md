@@ -11,8 +11,19 @@ public class drug{
   private double salesW;
   private String demand;
   
-   
+   /**
+   * Constructor for initializing a drug object
+   * @param dc drug code 
+   * @param n name 
+   * @param quantm quantity in money
+   * @param quantw quantity in weight
+   * @param rev revenue 
+   * @param prof profit 
+   * @param salew sales in weight
+   * @param dem demand
+   */ 
    public drug (String dc, String n, double quantm, double quantw, double rev, double prof, double salew, String dem){
+    //Initialize all instance variables   
     drugCode = dc; 
     name = n;
     quantityMoney = quantm;
@@ -22,8 +33,15 @@ public class drug{
     salesW = salew; 
     demand = dem;
   }
-  
+    /**
+   * Constructor for initializing a drug object
+   * @param dc drug code 
+   * @param n name 
+   * @param quantm quantity in money
+   * @param quantw quantity in weight
+   */ 
    public drug (String dc, String n, double quantm, double quantw){
+    //Initialize all instance variables
     drugCode = dc;
     name = n;
     quantityMoney = quantm;
