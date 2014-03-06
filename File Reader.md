@@ -1,7 +1,6 @@
 Computer-science-OOP
 ====================
 
-import java.io.BufferedReader;
 import java.util.Scanner;
 import java.io.*;
 
