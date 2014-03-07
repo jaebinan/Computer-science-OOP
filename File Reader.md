@@ -7,36 +7,43 @@ import java.io.*;
 public class MainOOP{
   public static void main(String args[]) throws Exception{
     int lineCounter = 0;
-    try{
+    try{//tries out the code
       Scanner in = new Scanner(new FileReader("DRUGZZ.txt"));
       String x;
-      String u[];
-      int i = 0;
-      while((x = in.nextLine()) != null){
-          u = x.split(" ");
-          u[i] = x;
-          System.out.println(u[i]);
+      while((x = in.nextLine()) != null){//reads file line by line until the end
           lineCounter++;
-          i++;
 }
     }catch (Exception e){
       if(e.getMessage().equals("No line found")){
         System.out.print("");
-     }else{
+      }else{
       System.out.println("There is an error: " + e.getMessage());
      
 }
 }
-    //System.out.println(lineCounter-1);
+    try{//tries out the code
+    Scanner in = new Scanner(new FileReader("DRUGZZ.txt"));
+    String a;
+    String data[][] = new String[lineCounter-1][8];
+    System.out.print(lineCounter);
+    int c = 0;
+    in.nextLine();
+    while((a = in.nextLine()) != null){//reads file line by line until the end
+      data[c] = a.split(" ");
+      c++;
+    }
+    }catch (Exception e){ 
+      if(e.getMessage().equals("No line found")){
+        System.out.print("");
+      }else{
+      System.out.println("There is an error: " + e.getMessage());
+   
+    
     
 }
 }
+  }
+}
 
 
 
-
-
-
-                  
-          
- 
