@@ -67,6 +67,5 @@ public class MainOOP{
   }
 }
   
-    System.out.println(d[4].getRevenue());
 }
 }
