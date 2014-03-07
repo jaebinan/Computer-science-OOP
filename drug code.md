@@ -54,7 +54,7 @@ public class drug{
    * @param the code
    * return void
    */
-  protected void setName(String dc){
+  protected void setCode(String dc){
     drugCode = dc;
 }
    
