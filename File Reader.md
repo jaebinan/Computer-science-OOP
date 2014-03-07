@@ -5,14 +5,13 @@ import java.util.Scanner;
 import java.io.*;
 
 public class MainOOP{
-  public static void main(String args[]) throws Exception{
+  
+  public static void main(String args[]) throws IOException{
     int lineCounter = 0;//keeps record of number of lines
-    int col = 0;//keeps record of the number of columns
     try{//tries out the code
       Scanner in = new Scanner(new FileReader("DRUGZZ.txt"));
       String x;
       while((x = in.nextLine()) != null){//reads file line by line until the end
-        col = x.split(",").length;//determines the numbers of columns
           lineCounter++;//adds to number of lines
 }in.close();//closes file
     }catch (Exception e){//catches exceptions if any
@@ -23,20 +22,15 @@ public class MainOOP{
     } 
     }
      
-
     Scanner in = new Scanner(new FileReader("DRUGZZ.txt"));
     String x;
     String sd;
-    String[] lines;//initialize 1D arrdy 
-    String[][] data = new String[lineCounter][col];//initialize 2D arrdy  
+    String[] lines = new String[lineCounter];;//initialize 1D arrdy 
     sd = in.nextLine();//skips the first line (headings)
     try{
     for (int y=0; y<(lineCounter-1); y++) {//goes through all the rows of the array and lines of the text file
     x = in.nextLine();//reads lines of the text file
-    lines = x.split(",");
-      for(int l = 0; l<lines.length;l++){//goes through all the rows of the array
-        data[y][l] = lines[l];//store data into the 2D array         
-}
+    lines[y] = x.trim();
     }
     }catch (Exception e){
       if(e.getMessage().equals("No line found")){//ignores the error "No line Found"
@@ -46,32 +40,33 @@ public class MainOOP{
     } 
     }
       
-  drug d[] = new drug[lineCounter-1];
-  //String noData = null;
+  Customer d[] = new Customer[lineCounter-1];
 
-
+  String[] parts = new String[7];
   for(int i = 0; i < (lineCounter-1); i++) {
-   
-   String dc = (data[i][0]);
-   String n = (data[i][1]);
-   double quantm = Double.parseDouble(data[i][2]);
-   double quantw = Double.parseDouble(data[i][3]);
-   double rev = Double.parseDouble(data[i][4]);
-   double pro = Double.parseDouble(data[i][5]);
-   double salew = Double.parseDouble(data[i][6]);
-   String dem = (data[i][7]);
-   d[i] = new drug(dc, n, quantm, quantw, rev, pro, salew, dem); 
+   parts = lines[i].split(",");
+   String dc = (parts[0]);
+   String n = (parts[1]);
+   double quantm = Double.parseDouble(parts[2]);
+   double quantw = Double.parseDouble(parts[3]);
+   double rev = Double.parseDouble(parts[4]);
+   double pro = Double.parseDouble(parts[5]);
+   double salew = Double.parseDouble(parts[6]);
+   String dem = (parts[7]);
+   d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem); 
 
    try{
-   if(((data[i][4])== null) && ((data[i][5])== null)&& ((data[i][6])==null)&& ((data[i][7])==null)) {
-    d[i] = new drug(dc, n, quantm, quantw, rev, pro, salew, dem); 
+   if(((parts[4])== null) && ((parts[5])== null)&& ((parts[6])==null)&& ((parts[7])==null)) {
+    d[i] = new Customer(dc, n, quantm, quantw);
    } else {
-    d[i] = new drug(dc, n, quantm, quantw);
+    d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem);
    }
    }catch (Exception e){
      System.out.println("There is an error: " + e.getMessage());
         
   }
 }
-  }
+  
+    System.out.println(d[4].getRevenue());
+}
 }
