@@ -23,7 +23,6 @@ public class drug{
    * @param dem demand
    */ 
    public drug (String dc, String n, double quantm, double quantw, double rev, double prof, double salew, String dem){
-    //Initialize all instance variables   
     drugCode = dc; 
     name = n;
     quantityMoney = quantm;
@@ -33,7 +32,7 @@ public class drug{
     salesW = salew; 
     demand = dem;
   }
-    /**
+  /**
    * Constructor for initializing a drug object
    * @param dc drug code 
    * @param n name 
@@ -41,7 +40,6 @@ public class drug{
    * @param quantw quantity in weight
    */ 
    public drug (String dc, String n, double quantm, double quantw){
-    //Initialize all instance variables
     drugCode = dc;
     name = n;
     quantityMoney = quantm;
@@ -51,7 +49,15 @@ public class drug{
     salesW = 0; 
     demand = "";
   }
-  
+  /**
+   * @Method that sets the code of the drug
+   * @param the code
+   * return void
+   */
+  protected void setName(String dc){
+    drugCode = dc;
+}
+   
   /**
    * @Method that sets the name of the drug
    * @param the name
@@ -79,11 +85,11 @@ public class drug{
     return true;
 }
   /**
-   * @Method that updates the demand    
-   * @param sale the sales in millions
+   * @Method that updates the revenue   
+   * @param revenue the revenue in millions
    * return void
    */
-  public void updateDemand(double rev){
+  public void updateRevenue(double rev){
     if (rev>100){
       demand = "very high";
     }if(rev>50){
@@ -145,6 +151,14 @@ public class drug{
     
 }
    /**
+   * @Method that gets the sales in weight
+   * return the sales in weight
+   */
+  public double getSalesw(){
+    return salesW;
+    
+}
+   /**
    * @Method that gets the demand
    * return the demand
    */
@@ -163,4 +177,3 @@ public class drug{
   
 }
 }
-    
