@@ -2,7 +2,7 @@ Computer-science-OOP
 ====================
 
 DrugCode,Name,quantity(Money),quantity(Weight),Revenue,Profit,Sales(Weight),Demand  	
-r4e6r,Weed,420,420,,420,420,420,vlow
+r4e6r,Weed,420,420,420,420,420,vlow
 y56yrt,Cocaine,750000,902,56000000,38000000,8764,high   
 6y54ytr,Shrooms,500000,763,11000000,7000000,9874,medium 
 ytrytr,Ecstasy,300000,54,16000000,5000000,18,medium   
@@ -18,7 +18,7 @@ qeqer3,Adderall,40000,3,189000874,78222948,111,vhigh
 6546fmn,OxyContin,60000,4432,123000,50000,242,vlow
 654tf,Speed,450000,23,67000000,39000000,23,high
 54yfghg,Xanax,170000,34,78000984,35000000,67,high
-243wr,Acid,280000,78,890569478,45,000000,75,high
+243wr,Acid,280000,78,890569478,45000000,75,high
 543tr,Smack,978786,75,7000000,2567956,45,low
 poipoi,StickyIcky,1337,1337,1337,1337,1337,vlow  
 oiuoiu,Marijuana,1000000,68,800000000,600000000,54400,vhigh
