@@ -1,25 +1,24 @@
 Computer-science-OOP
 ====================
 
-name        quantityMoney    quantityWeight       revenue      profit     sales   demand  	
-Weed            420              420              420          420         420      vlow
-Cocaine         750,000          902              56,000,000   38,000,000  8764     high   
-Shrooms         500,000          763              11,000,000   7,000,000   9874     medium 
-Ecstasy         300,000         54               16,000,000   5,000,000   18       medium   
-Meth            500,000         38               50,000,001   28,000,000  122      high
-SpecialK        150,000         51               8,000,000    6,000,000   23       low
-Rufies          300,000         67               100,000,001  58,000,001  87       vhigh
-LSD             300,000         43               38,000,009   18,000,083  99       medium
-Heroin          300,000         34               100,987      50,923      1        vlow
-PCP             100,000         7                2,009,000    23,098      67       low
-BathSalts       600,000         89               56,095,100   20,000,232  78       high
-Opium           50,000         7                2,000,293    1,000,847   13       low
-Adderall        40,000         3                189,000,874  78,222,948  111      vhigh 
-OxyContin       60,000         4432             123,000      50,000      242      vlow
-Speed           450,000         23               67,000,000   39,000,000  23       high
-Xanax           170,000         34               78,000,984   35,000,000  67       high
-Acid            280,000         78               89,056,9478  45,000,000  75       high
-Smack           978,786         75               7,000,000    2,567,956   45       low
-StickyIcky      1337            1337             1337         1337        1337     vlow  
-Marijuana       1,000,000       68               800,000,000  600,000,000 54,400   vhigh
-
+DrugCode,Name,quantity(Money),quantity(Weight),Revenue,Profit,Sales(Weight),Demand  	
+r4e6r,Weed,420,420,,420,420,420,vlow
+y56yrt,Cocaine,750000,902,56000000,38000000,8764,high   
+6y54ytr,Shrooms,500000,763,11000000,7000000,9874,medium 
+ytrytr,Ecstasy,300000,54,16000000,5000000,18,medium   
+mtyjy,Meth,500000,38,50000001,28000000,122,high
+756uty,SpecialK,150000,51,8000000,6000000,23,ow
+yu65uy,Rufies,300000,67,100000001,58000001,87,vhigh
+hgh5r,LSD,300000,43,38000009,18000083,99,medium
+654ytf,Heroin,300000,34,100987,50923,1,vlow
+y54yt,PCP,100000,7,2009000,23098,67,low
+y54ytr,BathSalts,600000,89,56095100,20000232,78,high
+hhgfhg,Opium,50000,7,2000293,1000847,13,low
+qeqer3,Adderall,40000,3,189000874,78222948,111,vhigh 
+6546fmn,OxyContin,60000,4432,123000,50000,242,vlow
+654tf,Speed,450000,23,67000000,39000000,23,high
+54yfghg,Xanax,170000,34,78000984,35000000,67,high
+243wr,Acid,280000,78,890569478,45,000000,75,high
+543tr,Smack,978786,75,7000000,2567956,45,low
+poipoi,StickyIcky,1337,1337,1337,1337,1337,vlow  
+oiuoiu,Marijuana,1000000,68,800000000,600000000,54400,vhigh
