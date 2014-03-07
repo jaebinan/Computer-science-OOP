@@ -62,17 +62,16 @@ public class MainOOP{
    String dem = (data[i][7]);
    d[i] = new drug(dc, n, quantm, quantw, rev, pro, salew, dem); 
 
-  
+   try{
    if(((data[i][4])== null) && ((data[i][5])== null)&& ((data[i][6])==null)&& ((data[i][7])==null)) {
     d[i] = new drug(dc, n, quantm, quantw, rev, pro, salew, dem); 
    } else {
     d[i] = new drug(dc, n, quantm, quantw);
    }
-  }
+   }catch (Exception e){
+     System.out.println("There is an error: " + e.getMessage());
         
   }
 }
-
-
-
-
+  }
+}
