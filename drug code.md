@@ -1,7 +1,7 @@
 Computer-science-OOP
 ====================
 
-public class drug{ 
+public class Customer{ 
   private String drugCode;
   private String name;
   private double quantityMoney;
@@ -12,7 +12,7 @@ public class drug{
   private String demand;
   
    /**
-   * Constructor for initializing a drug object
+   * Constructor for initializing a Customer object
    * @param dc drug code 
    * @param n name 
    * @param quantm quantity in money
@@ -22,7 +22,7 @@ public class drug{
    * @param salew sales in weight
    * @param dem demand
    */ 
-   public drug (String dc, String n, double quantm, double quantw, double rev, double prof, double salew, String dem){
+   public Customer (String dc, String n, double quantm, double quantw, double rev, double prof, double salew, String dem){
     drugCode = dc; 
     name = n;
     quantityMoney = quantm;
@@ -39,7 +39,7 @@ public class drug{
    * @param quantm quantity in money
    * @param quantw quantity in weight
    */ 
-   public drug (String dc, String n, double quantm, double quantw){
+   public Customer (String dc, String n, double quantm, double quantw){
     drugCode = dc;
     name = n;
     quantityMoney = quantm;
@@ -102,7 +102,16 @@ public class drug{
   demand = "very low";
 }
   }
-  
+   /**
+   * @Method that updates the quantity in money and weight 
+   * @param qm quantity in money
+   * @param qw quantity in weight
+   * return void
+   */
+  public void updateRevenue(double qm, double qw){
+    quantityMoney = qm;
+    quantityWeight = qw;
+  }
   /**
    * @Method that gets the code of the drug
    * return the drug of the drug
