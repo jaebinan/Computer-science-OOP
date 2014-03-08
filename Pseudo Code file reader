@@ -1,44 +1,66 @@
-Initializes linecounter variable 
-Try out code
-Import scanner
-Initialize string x
-Start while loop
-Increment linecounter
-Close file
-Catch exception
-Start If statement
-Ignore error
-Start else statement 
-Print error
-Import scanner to read file
-Initialize string x
-Initialize string sd
-Initialize 1D array
- Skips first line
-Start try block
-Start for loop
-Reads text file
-Remove white lines
-Print blank
-Print error message
-Initializes object array
-Initializes a string array
-Start for loop
-Declares variables for the object
+public class MainOOP{
+  
+  public static void main(String args[]) throws IOException{
+    Initialize int lineCounter to 0;
+    try code{
+      Scanner to read text file "DRUGZZ";
+      initialize String x to " ";
+      while(x reads line from text file and is not empty){
+          increase lineCounter by 1
+}close file
+    }catch exceptions
+      if(error message is"No line found")){
+        output blank
+      }else{  
+      output error message
+    } 
+    }
+     
+    Scanner to read file "DRUGZZ"
+    initialize string x
+    initialize String sd;
+    Initialize 1-d array String[] lines = new String[lineCounter value] 
+    read first line with string sd to skip first line
+    try code{//tries code
+    for loop(initialize int y=0; y<less than lineCounter-1; y++) {
+    read line with string x
+    array line[y] equals text file line
+    }
+    }catch exceptions{
+      if(error message is "No line Found")){
+        output blank
+      }else{
+      output error message
+    } 
+    }
+      
+  initialize object array Customer d[] = new Customer[lineCounter-1];
 
-Initializes dc
-Initializes n
-Convert array value to double and set values
-Convert array value to double and set values
-Convert array value to double and set values
-Convert array value to double and set values
-Convert array value to double and set values
-Initializes dem
-Creates an object
-Start try block
-Start if statement
-New customer 
-Else 
-New customer 
-Catches exception
-print error message
+  initialize array String[] parts = new String[7];
+  for loop(int i = 0; i < (lineCounter-1); i++){ to go through each row
+   Let parts = lines[i].split(",");
+   Let String dc = (parts[0]);
+   Let String n = (parts[1]);
+   Let double quantm = parts[2]
+   Let double quantw = (parts[3]
+   Let double rev = parts[4 
+   Let double pro = parts[5 
+   Let double salew = parts[6 
+   Let String dem = (parts[7]);
+   use constructor d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem) to create objects
+
+   try code{//tries code
+   if statement (check if parts[4] and parts[5] and parts[6] and parts[7] are empty){
+     use constucter d[i] = new Customer(dc, n, quantm, quantw);//constructs new object
+   } else {
+    use constructer d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem);
+   }
+   }catch exceptions{//catches exception
+     output error message
+        
+  }
+}
+  
+}
+}
+
