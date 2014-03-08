@@ -108,7 +108,7 @@ public class Customer{
    * @param qw quantity in weight
    * return void
    */
-  public void updateRevenue(double qm, double qw){
+  public void updateQuantity(double qm, double qw){
     quantityMoney = qm;
     quantityWeight = qw;
   }
