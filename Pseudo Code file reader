@@ -1,66 +1,65 @@
 public class MainOOPpseudo{
   
   public static void main(String args[]) throws IOException{
-    Initialize int lineCounter to 0;
-    try code{
-      Scanner to read text file "DRUGZZ";
-      initialize String x to " ";
-      while(x reads line from text file and is not empty){
-          increase lineCounter by 1
-}close file
-    }catch exceptions
-      if(error message is"No line found")){
-        output blank
-      }else{  
-      output error message
-    } 
-    }
+    //Initialize int lineCounter to 0;
+    //try code{
+      //Scanner to read text file "DRUGZZ";
+      //initialize String x to " ";
+      //while(x reads line from text file and is not empty){
+          //increase lineCounter by 1
+//}close file
+    //}catch exceptions
+      //if statement condition(error message is"No line found")){
+        //output blank
+      //}else{  
+      //output error message
+    //} 
+    //}
      
-    Scanner to read file "DRUGZZ"
-    initialize string x
-    initialize String sd;
-    Initialize 1-d array String[] lines = new String[lineCounter value] 
-    read first line with string sd to skip first line
-    try code{//tries code
-    for loop(initialize int y=0; y<less than lineCounter-1; y++) {
-    read line with string x
-    array line[y] equals text file line
-    }
-    }catch exceptions{
-      if(error message is "No line Found")){
-        output blank
-      }else{
-      output error message
-    } 
-    }
+    //Scanner to read file "DRUGZZ"
+    //initialize string x
+    //initialize String sd;
+    //Initialize 1-d array String[] lines = new String[lineCounter value] 
+    //read first line with string sd to skip first line
+    //try code{//tries code
+    //for loop(initialize int y=0; y<less than lineCounter-1; y++) {
+    //read line with string x
+    //array line[y] equals text file line
+    //}
+    //}catch exceptions{
+      //if statement condition(error message is "No line Found")){
+        //output blank
+     //}else{
+     // output error message
+    //} 
+    //}
       
-  initialize object array Customer d[] = new Customer[lineCounter-1];
+  //initialize object array Customer d[] = new Customer[lineCounter-1];
 
-  initialize array String[] parts = new String[7];
-  for loop(int i = 0; i < (lineCounter-1); i++){ to go through each row
-   Let parts = lines[i].split(",");
-   Let String dc = (parts);element 1
-   Let String n = (parts);element 2
-   Let double quantm = parts[2] converted to double
-   Let double quantw = (parts[3] converted to double
-   Let double rev = parts[4] converted to double
-   Let double pro = parts[5] converted to double
-   Let double salew = parts[6] converted to double
-   Let String dem = (parts[7]);element 8
-   use constructor d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem) to create objects
+  //initialize array String[] parts = new String[7];
+  //for loop(int i = 0; i < (lineCounter-1); i++){ to go through each row
+   //Let parts = lines[i].split(",");
+   //Let String dc = (parts);element 1
+   //Let String n = (parts);element 2
+   //Let double quantm = parts[2] converted to double
+   //Let double quantw = (parts[3] converted to double
+   //Let double rev = parts[4] converted to double
+   //Let double pro = parts[5] converted to double
+   //Let double salew = parts[6] converted to double
+   //Let String dem = (parts[7]);element 8
+   //use constructor d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem) to create objects
 
-   try code{//tries code
-   if statement (check if parts[4] and parts[5] and parts[6] and parts[7] are empty){
-     use constucter d[i] = new Customer(dc, n, quantm, quantw);//constructs new object
-   } else {
-    use constructer d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem);
-   }
-   }catch exceptions{//catches exception
+   //try code{//tries code
+   //if statement condition(check if parts[4] and parts[5] and parts[6] and parts[7] are empty){
+     //use constucter d[i] = new Customer(dc, n, quantm, quantw);//constructs new object
+   //} else {
+    //use constructer d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem);
+   //}
+   //}catch exceptions{//catches exception
      output error message
         
-  }
-}
+  //}
+//}
   
-}
-}
-
+//}
+//}
