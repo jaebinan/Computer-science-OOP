@@ -39,14 +39,14 @@ public class MainOOP{
   initialize array String[] parts = new String[7];
   for loop(int i = 0; i < (lineCounter-1); i++){ to go through each row
    Let parts = lines[i].split(",");
-   Let String dc = (parts[0]);
-   Let String n = (parts[1]);
-   Let double quantm = parts[2]
-   Let double quantw = (parts[3]
-   Let double rev = parts[4 
-   Let double pro = parts[5 
-   Let double salew = parts[6 
-   Let String dem = (parts[7]);
+   Let String dc = (parts);element 1
+   Let String n = (parts);element 2
+   Let double quantm = parts[2] converted to double
+   Let double quantw = (parts[3] converted to double
+   Let double rev = parts[4] converted to double
+   Let double pro = parts[5] converted to double
+   Let double salew = parts[6] converted to double
+   Let String dem = (parts[7]);element 8
    use constructor d[i] = new Customer(dc, n, quantm, quantw, rev, pro, salew, dem) to create objects
 
    try code{//tries code
