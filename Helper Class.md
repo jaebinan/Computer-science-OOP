@@ -145,7 +145,7 @@ public class Helper{
   /**
    * @Method that updates the revenue of a drug
    * @param name the name of the drug
-   * @param rev the revenue of the drug
+   * @param id the drug code
    * return location in array
    */
   public static void updateRev(String name,double rev){
